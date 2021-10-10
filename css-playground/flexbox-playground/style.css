@@ -1,0 +1,25 @@
+.container p {
+  background-color: #ec2c7c;
+  color: white;
+  padding: 25px;
+  margin: 5px;
+  width: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* flex-wrap: wrap-reverse; */
+  /* flex-flow: ; */
+}
+
+.parent {
+  display: flex;
+  height: 500px;
+  background-color: aliceblue;
+}
+
+.child {
+  margin: auto;
+}
