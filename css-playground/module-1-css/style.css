@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box; /* default is content-box */
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+div {
+  color: rgb(240, 240, 240);
+  background-color: rgb(209, 0, 122);
+  width: 300px;
+  border: 15px double rgb(36, 29, 36);
+  padding: 50px;
+  margin: 20px;
+} */
+
+.width-5 {
+  width: 500px;
+  background-color: brown;
+  border: 5px solid yellow;
+  padding: 0 5px 0 5px;
+}
+
+/* SELECTORS */
+[custom-attr="true"] {
+  background-color: purple;
+}
+
+.our-list {
+  padding-left: 4rem;
+}
+
+.our-list li::marker {
+  color: red;
+}
+
+*::selection {
+  background-color: darkorchid;
+  color: white;
+}
+
+/* NEXT SIBLING COMBINATOR */
+.two > li {
+  background-color: yellow;
+}
+
+/* SUBSEQUENT */
+.one ~ li {
+  background-color: brown;
+}
+
+/* DIRECT CHILD SELECTOR */
+span {
+  background-color: aqua;
+}
+
+div > span {
+  background-color: DodgerBlue;
+}
+
+#action-button {
+  background-color: yellow;
+}

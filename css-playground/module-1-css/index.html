@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Playground</title>
+  </head>
+  <body>
+    <!-- BOX MODEL -->
+    <h2>Demonstrating the Box Model</h2>
+
+    <p>
+      The CSS box model is essentially a box that wraps around every HTML
+      element. It consists of: borders, padding, margins, and the actual
+      content.
+    </p>
+
+    <div>
+      This text is the content of the box. We have added a 50px padding, 20px
+      margin and a 15px green border. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="width-5">This div should have a total width of 500px</div>
+
+    <!-- SELECTORS  -->
+    <div custom-attr="true">slaw</div>
+
+    <ul class="our-list">
+      <div>
+        outer div
+        <div>inner div</div>
+      </div>
+      <li class="one">one</li>
+      <li class="two">
+        text outside p
+        <div>nested div</div>
+      </li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+
+    <!-- DIRECT CHILDREN SELECTOR -->
+    <div>
+      <span
+        >Span #1, in the div.
+        <span>Span #2, in the span that's in the div.</span>
+      </span>
+    </div>
+    <span>Span #3, not in the div at all.</span>
+    <div>
+      <a href="https://www.w3schools.com/cssref/css_selectors.asp"
+        >List of CSS selectors for reference</a
+      >
+    </div>
+
+    <button id="action-button" style="background-color: red">
+      Action Button
+    </button>
+
+    <div>
+      <a
+        href="https://web.dev/learn/css/inheritance/#which-properties-are-inheritable"
+        >Which properties are inheritable?</a
+      >
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

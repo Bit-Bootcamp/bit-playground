@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML playground</title>
+  </head>
+  <body>
+    <!-- OLd doctype  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  -->
+
+    <!-- Figure Element -->
+
+    <!-- old way -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+      style="height: 100px; width: auto"
+      alt="About image"
+    />
+    <p>Image of Mars.</p>
+
+    <!-- new way -->
+    <figure>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+        style="height: 100px; width: auto"
+        alt="About image"
+      />
+      <figcaption>
+        <p>This is an image of something interesting.</p>
+      </figcaption>
+    </figure>
+
+    <!-- No need to close tags anymore or wrap attributes in quotes -->
+
+    <p class="myClass" id="someId">
+      Start the reactor.
+
+      <!-- No More Types for link and script tags -->
+      <!-- old -->
+      <link rel="stylesheet" href="path/to/stylesheet.css" type="text/css" />
+      <script type="text/javascript" src="path/to/script.js"></script>
+
+      <!-- Content Editable -->
+    </p>
+
+    <p contenteditable="">What is not HTML</p>
+
+    <ul>
+      <li>SVG: Not HTML5. It's at least five years old.</li>
+      <li>CSS3: Not HTML5. It's...CSS.</li>
+      <li>Geolocation: Not HTML5.</li>
+      <li>
+        Client Storage: Not HTML5. It was at one point, but was removed from the
+        spec, due to the fact that many worried that it, as a whole, was
+        becoming too complicated. It now has its own specification.
+      </li>
+      <li>
+        Web Sockets: Not HTML5. Again, was exported to its own specification.
+      </li>
+    </ul>
+
+    <!-- Pre formatted text -->
+    <pre>
+          void Node::Remove()
+          {
+              if (prev)
+                  prev->next = next;
+              else if (parent)
+                  parent->SetContent(null);
+      
+              if (next)
+                  next->prev = prev;
+      
+              parent = null;
+          }
+      </pre
+    >
+
+    <p custom-attribute="some text here" id="custom-element">
+      custom attributes
+    </p>
+    <!-- element.getAttribute('custom-attribute') -->
+
+    <!-- Special Characters -->
+    <p>&copy; &reg;</p>
+
+    <!-- new  - no need to specify type-->
+    <link rel="stylesheet" href="path/to/stylesheet.css" />
+    <script src="path/to/script.js"></script>
+
+    <!-- HTML Cheatsheet -->
+    <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">
+      HTML Cheatsheet</a
+    >
+
+    <blockquote>
+      Practice with elements so you can learn the usual way components are
+      created.
+    </blockquote>
+
+    <input type="checkbox" id="task1" name="task1" value="Card" />
+    <label for="task1"> Create the structure of a Card</label><br />
+    <input type="checkbox" id="task2" name="task2" value="Navbar" />
+    <label for="task2"> Create the structure of a Navbar</label><br />
+    <input type="checkbox" id="task3" name="task3" value="Checkbox" />
+    <label for="task3"> Checkbox</label>
+  </body>
+</html>
