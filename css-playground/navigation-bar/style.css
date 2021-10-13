@@ -1,0 +1,39 @@
+:root {
+  font-family: sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  height: 60px;
+  display: flex;
+  background-color: rgb(39, 39, 39);
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.navigation-links-container {
+  display: flex;
+  list-style: none;
+}
+
+.navigation-links-container > li {
+  margin: 0 1rem 0 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.cta-button {
+  background-color: rgb(0, 125, 141);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}

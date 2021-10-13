@@ -386,7 +386,8 @@ li a:hover:not(.active) {
 .hero {
   height: calc(100vh - 46px);
 
-  background-color: #006466;
+  background-image: url("https://www.paymentsjournal.com/wp-content/uploads/2020/01/862-scaled.jpg");
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -403,6 +404,7 @@ li a:hover:not(.active) {
 
   padding: 1rem 3rem;
   background-color: #333;
+  opacity: 80%;
   color: #f9f9f9;
   text-align: center;
   /* display: flex;
@@ -413,10 +415,12 @@ li a:hover:not(.active) {
 
 .hero-card > h2 {
   font-size: 4rem;
+  opacity: 100% !important;
 }
 
 .hero-card > p {
   font-size: 2rem;
+  opacity: 100% !important;
 }
 
 /* User Cards */
