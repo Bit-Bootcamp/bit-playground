@@ -1,0 +1,115 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --brand-color-1: #9b5de5;
+  --brand-color-2: #f15bb5;
+  --brand-color-3: #fee440;
+  --brand-color-4: #00bbf9;
+  --brand-color-4-dark: #00a3da;
+  --brand-color-5: #00f5d4;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--brand-color-2);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select > option:hover {
+  background-color: var(--brand-color-1);
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: var(--brand-color-1);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(144, 0, 180);
+}
+
+div {
+  border-radius: 5px;
+  background-color: var(--brand-color-2);
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 5rem;
+}
+.form-container h3 {
+  align-self: center;
+}
+
+/* --- MOBILE FIRST MEDIA QUERIES --- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form-container {
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .form-container {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .form-container {
+    width: 50%;
+  }
+}
+
+/* ORIENTATION */
+
+/* Landscape  */
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: grey;
+  }
+}
+
+/* Portrait */
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: darkslategray;
+  }
+}
