@@ -71,11 +71,11 @@ div {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .form-container {
     width: 80%;
   }
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -103,7 +103,7 @@ div {
 /* Landscape  */
 @media only screen and (orientation: landscape) {
   body {
-    background-color: grey;
+    background-color: rgb(247, 247, 247);
   }
 }
 

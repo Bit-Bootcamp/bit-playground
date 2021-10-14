@@ -1,14 +1,16 @@
 /* Setting inner content of an Element */
 function setText() {
-  document.getElementById("demo").innerHTML = "Hello World";
+  var selectedElement = document.getElementById("demo");
+  selectedElement.innerHTML = "Hello World";
 }
 
 /* Replacing a DOM element with a new one */
 function replaceText() {
   var oldElement = document.getElementById("old");
   var newElement = document.createElement("p");
-  newElement.innerHTML = "<b>Hello new text!</b>";
-
+  newElement.innerHTML =
+    "<b style='background-color: blue;'>Hello new text!</b>";
+  newElement.classList.add("red-background");
   // replace oldElement with newElement
   oldElement.parentNode.replaceChild(newElement, oldElement);
 }
@@ -16,7 +18,9 @@ function replaceText() {
 /* EMpty an Element */
 function unwrapElement() {
   var el = document.getElementById("element-content");
-  el.innerHTML = "";
+  var list = ["<li>new slaw</li><li>new choni</li><li>new bashi</li>"];
+
+  el.innerHTML = list;
 }
 
 /* toggle fullscreen */
