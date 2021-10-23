@@ -1,0 +1,14 @@
+/* CUSTOM STYLES */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container div {
+  margin-bottom: 2rem;
+}
