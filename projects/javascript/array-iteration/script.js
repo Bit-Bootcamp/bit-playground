@@ -1,36 +1,21 @@
-// es6 rest parameter
+// generate a random number (0-1)
 
-function isPassed(...userMarks) {
-  /* userMarks = [50, 60, 40, 80, 30, 50, 50, 50] */
-  /* userMarks = [40, 40, 40, 40, 30] */
-
-  let functionForEachMark = function (mark) {
-    if (mark >= 50) {
-      console.log("darchwa");
-    } else if (mark < 50) {
-      console.log("darnachwa");
-    }
-  };
-  userMarks.forEach(functionForEachMark);
+for (i = 0; i < 20; i++) {
+  let randomNumber = Math.random() * 5;
+  let withoutZero = Math.round(randomNumber);
+  console.log(withoutZero + 1);
 }
 
-console.log(isPassed(50, 60, 40, 80, 30, 50, 50, 50));
-console.log(isPassed(40, 40, 40, 40, 30));
+// random number between 5 - 10
 
-let firstArray = [1, 2, 3];
+// input wargrit
+// reverse input input.reverse()
+// barawrd
+// check yaksann ba yak yan na
 
-console.log(firstArray);
-console.log(...firstArray);
+let input = [("k", "l", "k")];
+"klk"
 
-let ages = [18, 20, 15, 30, 12, 11, 50];
-// Check to see if they can have a driving lisence
-
-ages.forEach(function myFUnction(age) {
-  console.log(age);
-
-  if (age < 18) {
-    console.log("darnachwa");
-  } else {
-    console.log("darchaw");
-  }
-});
+split()
+reverse()
+join()

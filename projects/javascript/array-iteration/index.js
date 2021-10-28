@@ -1,6 +1,10 @@
+let array = ["name", "age"];
+
+array[1] = "new name";
+
 // Array iteration: 8 methods
 
-// forEach
+// forEach : executes a provided function once for each array element.
 let myFucntion = function () {};
 
 let myObject = {
@@ -14,7 +18,7 @@ myArray[1].forEach((item) => {
   console.log(item);
 });
 
-// map
+// map : creates a new array with the results of calling a provided function on every element in the calling array.
 const smallArray = [1, 2, 3];
 const doubled = smallArray.map(function (item) {
   return item * 2;
@@ -23,15 +27,17 @@ console.log(doubled);
 
 // filter
 const ints = [1, 2, 3];
+
 const evens = ints.filter(function (item) {
   return item % 2 === 0;
 });
 console.log(evens);
 
 // reduce
-const sum = [1, 2, 3].reduce(function (result, item) {
+const sum = [100, 2, 3, 4, 5].reduce(function (result, item) {
   return result + item;
-}, 0);
+});
+
 console.log(sum);
 
 // some
@@ -83,6 +89,9 @@ console.log(fun(1, 2, 3)); //6
 console.log(fun(1, 2, 3, 4, 5)); //15
 
 /* Spread Operator */
+
+
+
 
 // Merge Array
 [...array1, ...array2];
