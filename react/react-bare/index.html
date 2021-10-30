@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      let buttonText = "Click Me";
+
+      let myList = (
+        <ul>
+          <li>Apples</li>
+          <li>Bananas</li>
+          <li>Cherries</li>
+        </ul>
+      );
+
+      function Hello() {
+        return <h1>Hello World!</h1>;
+      }
+
+      class Car extends React.Component {
+        render() {
+          return (
+            <ul>
+              <li>hello</li>
+              <li>there</li>
+              <li>somefine</li>
+              <li>lists</li>
+            </ul>
+          );
+        }
+      }
+
+      let myButton = (
+        <div>
+          <button>{buttonText} </button>
+
+          <Car />
+        </div>
+      );
+
+      ReactDOM.render(myButton, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
