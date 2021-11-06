@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-
+import Button from "react-bootstrap/Button";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./App.css";
@@ -13,12 +13,11 @@ export default function App() {
 
       <nav>
         <ul>
-          <a href="/about"> About</a>
           <Link to="/about">About</Link>
           <Link to="/">Home</Link>
         </ul>
       </nav>
-
+      <Button>slaw</Button>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
