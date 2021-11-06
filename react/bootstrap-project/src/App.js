@@ -4,19 +4,13 @@ import Button from "react-bootstrap/Button";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./App.css";
+import TheNavbar from "./components/TheNavbar";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Welcome to React Router!</h1>
-      {/* To change URL */}
+    <div>
+      <TheNavbar />
 
-      <nav>
-        <ul>
-          <Link to="/about">About</Link>
-          <Link to="/">Home</Link>
-        </ul>
-      </nav>
       <Button>slaw</Button>
       <Routes>
         <Route exact path="/" element={<Home />} />
