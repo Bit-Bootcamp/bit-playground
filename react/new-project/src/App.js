@@ -7,6 +7,10 @@ import UserList from "./components/UserList";
 // import Carousel from "./components/HeroCarousel";
 
 function App() {
+  let myStyles = {
+    backgroundColor: "red",
+    color: "white",
+  };
   return (
     <div>
       <Navbar />
@@ -20,8 +24,10 @@ function App() {
         }}
       >
         <ActionButton />
-        <UserList />
+        {/* <UserList /> */}
       </Container>
+
+      <p style={myStyles}> slaw</p>
     </div>
   );
 }

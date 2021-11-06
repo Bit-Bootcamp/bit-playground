@@ -10,13 +10,16 @@
       crossorigin
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- async and differ -->
   </head>
   <body>
-    <div id="mydiv"></div>
+    <div id="mydiv">slawslfsalkfjdslkaj</div>
 
     <script type="text/babel">
       let buttonText = "Click Me";
 
+      // Another COmponent - List
       let myList = (
         <ul>
           <li>Apples</li>
@@ -25,32 +28,21 @@
         </ul>
       );
 
+      // Functional Component - Hello
       function Hello() {
         return <h1>Hello World!</h1>;
       }
 
-      class Car extends React.Component {
-        render() {
-          return (
-            <ul>
-              <li>hello</li>
-              <li>there</li>
-              <li>somefine</li>
-              <li>lists</li>
-            </ul>
-          );
-        }
-      }
-
-      let myButton = (
+      // Some Parent Component
+      let someComponent = (
         <div>
-          <button>{buttonText} </button>
+          <button>Click me </button>
 
-          <Car />
+          <Hello />
         </div>
       );
 
-      ReactDOM.render(myButton, document.getElementById("mydiv"));
+      ReactDOM.render(someComponent, document.getElementById("mydiv"));
     </script>
   </body>
 </html>

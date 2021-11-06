@@ -1,12 +1,26 @@
 import React from "react";
 
 export default function UserList() {
-  let users = ["Ahmad", "Hama", "Majid"];
+  let users = [
+    "Ahmad",
+    "Hama",
+    "Majid",
+    "Ahmad",
+    "Hama",
+    "Majid",
+    "Ahmad",
+    "Hama",
+    "Majid",
+    "Ahmad",
+    "Hama",
+    "Majid",
+  ];
+
   return (
-    <div>
+    <ul>
       {users.map((user) => {
-        return <div> {user}</div>;
+        return <li> {user}</li>;
       })}
-    </div>
+    </ul>
   );
 }

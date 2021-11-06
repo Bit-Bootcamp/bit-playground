@@ -16,7 +16,6 @@ export default function ActionButton() {
     <div style={{ backgroundColor: "cyan", heigh: "500px", width: "500px" }}>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
-
       {isOddEven()}
     </div>
   );
