@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Button from "react-bootstrap/Button";
 export default function ContactForm() {
   const [inputs, setInputs] = useState({});
 
@@ -24,6 +24,7 @@ export default function ContactForm() {
           value={inputs.username || ""}
           onChange={handleChange}
         />
+        <Button> button</Button>
       </label>
       <label>
         Enter your age:

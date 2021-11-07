@@ -7,7 +7,7 @@ import "./App.css";
 import TheNavbar from "./components/TheNavbar";
 import ContactForm from "./components/ContactForm";
 
-export default function App() {
+function App() {
   return (
     <div>
       <TheNavbar />
@@ -21,3 +21,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
