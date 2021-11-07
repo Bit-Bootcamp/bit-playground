@@ -8,8 +8,12 @@ export default function TodoItem({ todo, index, completeTodo, removeTodo }) {
     >
       {todo.text}
       <div>
-        <button onClick={() => completeTodo(index)}>Complete</button>
-        <button onClick={() => removeTodo(index)}>Delete</button>
+        <button className="btn-complete" onClick={() => completeTodo(index)}>
+          Complete
+        </button>
+        <button className="btn-delete" onClick={() => removeTodo(index)}>
+          X
+        </button>
       </div>
     </div>
   );
