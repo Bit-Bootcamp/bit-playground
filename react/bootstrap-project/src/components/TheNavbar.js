@@ -8,13 +8,13 @@ export default function TheNavbar() {
       onSelect={(selectedKey) => console.log(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Nav.Link as={Link} to="/home">
+        <Nav.Link as={Link} to="/">
           Home
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to="/about" eventKey="link-1">
-          About
+        <Nav.Link as={Link} to="/contact" eventKey="link-1">
+          Contact
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>

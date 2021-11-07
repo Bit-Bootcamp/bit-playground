@@ -1,22 +1,22 @@
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./App.css";
 import TheNavbar from "./components/TheNavbar";
+import ContactForm from "./components/ContactForm";
 
 export default function App() {
   return (
     <div>
       <TheNavbar />
 
-      <Button>slaw</Button>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route element={<p>Error 404, Page not found</p>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </div>
   );
