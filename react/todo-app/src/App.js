@@ -19,16 +19,23 @@ function App() {
     },
   ]);
 
-  /* Add new todo */
+  /* Add new todo item*/
   const addTodo = (text) => {
     const newTodos = [...todos, { text }];
     setTodos(newTodos);
   };
 
-  /* Mark a todo as complete */
+  /* Mark a todo item as complete */
   const completeTodo = (index) => {
     const newTodos = [...todos];
     newTodos[index].isCompleted = true;
+    setTodos(newTodos);
+  };
+
+  /* Delete todo item */
+  const removeTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
     setTodos(newTodos);
   };
 
@@ -36,7 +43,13 @@ function App() {
     <div className="app">
       <div className="todo-list">
         {todos.map((todo, index) => (
-          <TodoItem key={index} index={index} todo={todo} handler={completeTodo}/>
+          <TodoItem
+            key={index}
+            index={index}
+            todo={todo}
+            completeTodo={completeTodo}
+            removeTodo={removeTodo}
+          />
         ))}
 
         <TodoForm addTodo={addTodo} />
