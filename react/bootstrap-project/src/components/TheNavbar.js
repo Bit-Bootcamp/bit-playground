@@ -16,6 +16,11 @@ export default function TheNavbar() {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
+        <Nav.Link as={Link} to="/dog">
+          Random Dog Fact
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
         <Nav.Link as={Link} to="/contact">
           Contact
         </Nav.Link>

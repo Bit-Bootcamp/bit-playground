@@ -7,6 +7,7 @@ import "./App.css";
 import TheNavbar from "./components/TheNavbar";
 import ContactForm from "./components/ContactForm";
 import Quote from "./pages/Quote";
+import DogApi from "./pages/DogApi";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/about" element={<About />} />
+        <Route path="/dog" element={<DogApi />} />
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </div>
